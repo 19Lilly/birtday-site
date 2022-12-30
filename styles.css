@@ -1,0 +1,148 @@
+body {
+    text-align: center;
+    font-family: Princess Sofia;
+    font-size: 32px;
+    background: linear-gradient(-45deg, #EFB0C9, #EFB0C9, #a2d2ff, #a2d2ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    color: #ffffff;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black;
+}
+
+
+  .heart {
+    display:inline-block;
+    width: 198px; 
+    border-image: radial-gradient(#ef4f8f 69%,#0000 70%) 84.5% fill/100%;
+    aspect-ratio: 1;
+    clip-path: polygon(-41% 0,50% 91%, 141% 0);
+    
+    
+  }
+
+  #beky-img {
+    width: 198px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    
+--_m: radial-gradient(#ef4f8f 69%,#0000 70%) 84.5% fill/100%;
+    -webkit-mask-box-image: var(--_m);
+               mask-border: var(--_m);
+    clip-path: polygon(-41% 0,50% 91%, 141% 0);
+    margin-top: 6px;
+    
+  }
+
+  @supports not (-webkit-mask-box-image: var(--_m)) { 
+    #beky-img {
+     --_m:
+       radial-gradient(circle at 60% 63%,#000 64%,#0000 65%) top left /50% 50% no-repeat,
+       radial-gradient(circle at 40% 63%,#000 64%,#0000 65%) top right/50% 50% no-repeat,
+       linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+     -webkit-mask: var(--_m);
+             mask: var(--_m);
+    }
+}
+
+
+
+#bday-age {
+    background: #ef4f8f;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #ef4f8f;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-cheers {
+    height: 200px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+
+}
+
+#gift-img-excited:hover {
+    background-image: url("images/excited.gif");
+}
+
+#gift-img-princess:hover {
+    background-image: url("images/princess.gif");
+}
+
+#gift-img-happy-birthday:hover {
+    background-image: url("images/happy-birthday.gif");
+}
+
+#gift-img-gift:hover {
+    background-image: url("images/gift.gif");
+}
+
+#gift-img-sweets:hover {
+    background-image: url("images/sweets.gif");
+}
+
+#gift-img-love-you:hover {
+    background-image: url("images/love-you.gif");
+}
+
+#footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}
+/
